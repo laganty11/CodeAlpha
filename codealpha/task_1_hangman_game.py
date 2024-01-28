@@ -1,7 +1,7 @@
 import random
 
 def choose_word():
-    words = ["python", "hangman", "programming", "challenge", "coding"]
+    words = ["python", "hangmans", "programming", "challenge", "coding"]
     return random.choice(words)
 
 def display_word(word, guessed_letters):
@@ -14,7 +14,7 @@ def display_word(word, guessed_letters):
     return display
 
 def hangman():
-    max_attempts = 6
+    max_attempts = 10
     guessed_letters = []
     word_to_guess = choose_word()
     attempts_left = max_attempts
