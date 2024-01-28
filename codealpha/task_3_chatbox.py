@@ -1,7 +1,6 @@
 import nltk
 from nltk.chat.util import Chat, reflections
 
-# Define pairs of patterns and responses for the chatbot
 pairs = [
     [
         r"my name is (.*)",
@@ -53,7 +52,6 @@ pairs = [
     ],
 ]
 
-# Create a Chat object
 chatbot = Chat(pairs, reflections)
 
 def simple_chat():
@@ -66,5 +64,4 @@ def simple_chat():
         response = chatbot.respond(user_input)
         print("Chatbot:", response)
 
-# Call the function to start the chat
 simple_chat()
