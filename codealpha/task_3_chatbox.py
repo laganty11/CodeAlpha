@@ -3,6 +3,10 @@ from nltk.chat.util import Chat, reflections
 
 pairs = [
     [
+        r"hello",
+        ["Hello, how can i help you?",]
+    ],
+    [
         r"my name is (.*)",
         ["Hello %1, how can I help you today?",]
     ],
@@ -25,30 +29,6 @@ pairs = [
     [
         r"(.*)",
         ["I'm sorry, I didn't understand that. Can you please rephrase?",]
-    ],
-    [
-        r"tell me a joke",
-        ["Sure, here's one: Why don't scientists trust atoms? Because they make up everything!",]
-    ],
-    [
-        r"how old are you",
-        ["I don't have an age. I'm just a computer program.",]
-    ],
-    [
-        r"where are you located",
-        ["I exist in the virtual world, so I don't have a physical location.",]
-    ],
-    [
-        r"favorite color",
-        ["I don't have a favorite color. I'm not programmed to have preferences.",]
-    ],
-    [
-        r"thank you",
-        ["You're welcome! If you have more questions, feel free to ask.",]
-    ],
-    [
-        r"bye|goodbye",
-        ["Goodbye! If you ever want to chat again, I'll be here.",]
     ],
 ]
 
