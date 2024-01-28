@@ -20,7 +20,7 @@ class PortfolioTracker:
             print(f"Error: {symbol} not found in the portfolio.")
 
     def track_performance(self):
-        ts = TimeSeries(key='YOUR_ALPHA_VANTAGE_API_KEY')  # Replace with your Alpha Vantage API key
+        ts = TimeSeries(key='YOUR_ALPHA_VANTAGE_API_KEY')  
 
         total_value = 0
         for symbol, quantity in self.portfolio.items():
@@ -38,7 +38,6 @@ class PortfolioTracker:
         for symbol, quantity in self.portfolio.items():
             print(f"{symbol}: {quantity} units")
 
-# Example usage:
 if __name__ == "__main__":
     tracker = PortfolioTracker()
 
